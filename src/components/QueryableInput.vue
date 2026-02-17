@@ -8,7 +8,7 @@
       <b-dropdown size="sm" class="op" variant="dark" split :text="operator.label" @click="iterateOps">
         <b-dropdown-item-button
           v-for="op in operators"
-          :key="op.SYMBOL"
+          :key="op.name"
           :active="op === operator"
           @click="updateOperator(op)"
           button-class="d-flex justify-content-between align-items-center"
