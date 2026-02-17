@@ -163,11 +163,12 @@ export default {
       this.validationErrors = errors;
       this.validationWarnings = warnings;
     },
-    truncate(str, maxLength = 20) {
-      if (str.length <= maxLength) {
-        return str;
+    truncate(value, maxLength = 20) {
+      const strValue = String(value);
+      if (strValue.length <= maxLength) {
+        return strValue;
       }
-      return str.substring(0, maxLength) + '...';
+      return strValue.substring(0, maxLength) + '...';
     }
   }
 };
