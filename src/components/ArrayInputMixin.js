@@ -163,8 +163,8 @@ export default {
       this.validationErrors = errors;
       this.validationWarnings = warnings;
     },
-    truncate(str, maxLength = 20) {
-      const strValue = String(str);
+    truncate(value, maxLength = 20) {
+      const strValue = String(value);
       if (strValue.length <= maxLength) {
         return strValue;
       }
